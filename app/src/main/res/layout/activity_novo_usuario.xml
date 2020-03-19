@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NovoUsuarioActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:elevation="8dp">
+
+    <EditText
+        android:id="@+id/loginNovoUsuarioEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:hint="@string/dica_login"
+        android:background="@color/colorInput"
+        android:elevation="8dp"/>
+
+    <EditText
+        android:id="@+id/senhaNovoUsuarioEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:hint="@string/dica_senha"
+        android:inputType="textPassword"
+        android:background="@color/colorInput"
+        android:elevation="8dp"/>
+
+    <!-- end e start servem para mudarem os parametros de edição de acordo com o idioma -->
+    <Button
+        android:id="@+id/fazerLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="criarNovoUsuario"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@android:string/ok"
+        android:background="@color/colorPrimary"
+        android:elevation="10dp"
+        />
+
+</LinearLayout>
